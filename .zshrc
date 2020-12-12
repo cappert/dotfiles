@@ -11,6 +11,9 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 # Aliases
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
+# TODO: add brew completion
+# https://docs.brew.sh/Shell-Completion
+
 # start completion
 autoload -U compinit
 compinit
@@ -19,8 +22,12 @@ compinit
 setopt prompt_subst
 
 # source git ps1, homebrew symlink
-# TODO: check file exists, use osx version first 
+# TODO: check file exists
 source /usr/local/etc/bash_completion.d/git-prompt.sh
+
+# fallback on Command Line Tools version in:
+# /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+
 
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWSTASHSTATE=true
