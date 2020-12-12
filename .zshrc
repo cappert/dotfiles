@@ -11,8 +11,10 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 # Aliases
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
-# TODO: add brew completion
-# https://docs.brew.sh/Shell-Completion
+# compinit will complain about insecure directories (run compaudit to check)
+# see https://docs.brew.sh/Shell-Completion
+# to fix run:
+## chmod -R go-w "$(brew --prefix)/share"
 
 # start completion
 autoload -U compinit
