@@ -7,6 +7,9 @@ source /usr/local/opt/chruby/share/chruby/auto.sh
 # Aliases
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
+export VISUAL=vim
+export EDITOR=$VISUAL
+
 # compinit will complain about insecure directories (run compaudit to check)
 # see https://docs.brew.sh/Shell-Completion
 # to fix run:
