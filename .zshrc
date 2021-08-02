@@ -1,8 +1,4 @@
-
-## FIXME: unneeded, default PATH on fresh MacOS install:
-## /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
-# add PATH for homebrew
-# export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:$PATH"
+# see also .zprofile for homebrew and /etc/paths.d to add to $PATH
 
 # source chruby and auto-switching
 source /usr/local/opt/chruby/share/chruby/chruby.sh
