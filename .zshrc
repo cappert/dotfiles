@@ -15,6 +15,11 @@ export EDITOR=$VISUAL
 # https://unix.stackexchange.com/questions/197839/why-does-exporting-vim-as-editor-in-zsh-disable-keyboard-shortcuts
 bindkey -e
 
+# or maybe just add:
+# bindkey "^A" vi-beginning-of-line
+# bindkey "^E" vi-end-of-line
+
+
 # compinit will complain about insecure directories (run compaudit to check)
 # see https://docs.brew.sh/Shell-Completion
 # to fix run:
