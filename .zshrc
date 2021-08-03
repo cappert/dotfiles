@@ -1,8 +1,8 @@
 # see also .zprofile for homebrew and /etc/paths.d to add to $PATH
 
 # source chruby and auto-switching
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 
 # Aliases
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
@@ -29,10 +29,13 @@ setopt prompt_subst
 
 # source git ps1, homebrew symlink
 # TODO: check file exists
-source /usr/local/etc/bash_completion.d/git-prompt.sh
+# Intel:
+# source /usr/local/etc/bash_completion.d/git-prompt.sh
+# Apple Silicon:
+# /opt/homebrew/etc/bash_completion.d/git-prompt.sh
 
 # fallback on Command Line Tools version in:
-# /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+ source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
 
 
 export GIT_PS1_SHOWDIRTYSTATE=true
