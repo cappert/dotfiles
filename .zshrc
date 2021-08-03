@@ -10,6 +10,11 @@ alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 export VISUAL=vim
 export EDITOR=$VISUAL
 
+# setting a vi as EDITOR hints zsh to switch to vi keybindings
+# but we want emacs keybinds
+# https://unix.stackexchange.com/questions/197839/why-does-exporting-vim-as-editor-in-zsh-disable-keyboard-shortcuts
+bindkey -e
+
 # compinit will complain about insecure directories (run compaudit to check)
 # see https://docs.brew.sh/Shell-Completion
 # to fix run:
