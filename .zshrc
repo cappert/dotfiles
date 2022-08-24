@@ -4,10 +4,6 @@
 source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 
-# Load pyenv into the shell
-# by adding the following to ~/.zshrc:
-eval "$(pyenv init -)"
-
 # Aliases
 alias vlc="/Applications/VLC.app/Contents/MacOS/VLC"
 
