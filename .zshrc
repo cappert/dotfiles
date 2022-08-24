@@ -23,6 +23,10 @@ bindkey -e
 # bindkey "^A" vi-beginning-of-line
 # bindkey "^E" vi-end-of-line
 
+# completion path (for arm64, on Intel /usr/local is already on the FPATH)
+# prefix hardcoded, doc call brew
+## FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+FPATH="/opt/homebrew/share/zsh/site-functions:${FPATH}"
 
 # compinit will complain about insecure directories (run compaudit to check)
 # see https://docs.brew.sh/Shell-Completion
