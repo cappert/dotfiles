@@ -34,7 +34,7 @@ FPATH="/opt/homebrew/share/zsh/site-functions:${FPATH}"
 ## chmod -R go-w "$(brew --prefix)/share"
 
 # start completion
-autoload -U compinit
+autoload -Uz compinit
 compinit
 
 # prompt
